@@ -64,10 +64,10 @@ let reset=()=>{
         gameover=false
         document.getElementsByClassName(`info`)[0].firstElementChild.innerText=`Turn for `+turn
         img.style.width=`0px`
-        let winner=document.getElementsByClassName(`winner`)[0]
-        if(winner!=undefined){
-       winner.innerText=``
-        }
+        let winner=document.getElementsByClassName(`winner`)
+      for(let t of winner){
+        t.innerText=``
+      }
 
     })
 }
